@@ -1,5 +1,5 @@
 import React from 'react'
-import {FcDeleteDatabase} from 'react-icons/Fc'
+//import {FcDeleteDatabase} from 'react-icons/Fc'
 import { useDispatch } from 'react-redux';
 import {remove} from '../Context/CartSlice'
 
@@ -22,7 +22,7 @@ const Cartitem = (props) => {
             <p className='w-[200px]'>{item.description.split(" ").slice(0,10).join(" ")+"..."}</p>
              <div className='flex gap-12'>
                 <p>${item.price}</p>
-                <div onClick={removeCart}><FcDeleteDatabase/></div>
+                <div onClick={removeCart}><button>Delete</button></div>
              </div>
         </div>
       </div>
